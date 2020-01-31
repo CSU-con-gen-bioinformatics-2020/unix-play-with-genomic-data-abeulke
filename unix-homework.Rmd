@@ -1,10 +1,10 @@
 ---
 title: "The "Getting to Know Unix" Problem Set"
 output:
-  html_document:
-    df_print: paged
   html_notebook:
-    number_sections: yes
+    number_sections: paged
+  html_document:
+    df_print: yes
 ---
 
 <!-- The following few lines just change some font sizes and colors and give us horizontal scrolling code and output boxes -->
@@ -258,7 +258,8 @@ rm -rd {nice,bad}*
 # Why is it a good idea to `ls` things before removing them?
 
 ```
-Using the 'ls' command before removing anything is a good way to make sure your code will only select the files or directories that you want to delete!
+Using the 'ls' command before removing anything is a good way to make sure your code
+will only select the files or directories that you want to delete!
 ```
 
 # If you had just typed `rm -r bad directory name with spaces` what would Unix have tried to remove?
@@ -313,7 +314,8 @@ gzcat fastq/DPCh_plate1_C11_S35.R2.fq.gz | head -8
 # What do you notice about the names of the two reads in each file (Lines 1 and 5, that start with a `@`)
 
 ```
-The read names are the same in R1 and R2. The differ at the very end where it is either /1 (R1) or /2 (R2 file)
+The read names are the same in R1 and R2. The differ at the very end where it is either
+/1 (R1) or /2 (R2 file)
 ```
 
 
