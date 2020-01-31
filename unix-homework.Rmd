@@ -1,10 +1,8 @@
 ---
-title: "The "Getting to Know Unix" Problem Set"
+title: "The Getting to Know Unix Problem Set"
 output:
   html_notebook:
-    number_sections: paged
-  html_document:
-    df_print: yes
+    number_sections: yes
 ---
 
 <!-- The following few lines just change some font sizes and colors and give us horizontal scrolling code and output boxes -->
@@ -153,7 +151,7 @@ ls -R lonely-fastqs
 
 # Use the recursive (-r) option to remove `lonely-fastqs` and its contents
 
-```{bash}
+```{bash, error=TRUE}
 rm -r lonely-fastqs
 cd lonely-fastqs
 
@@ -475,5 +473,6 @@ chmod 774 silly/FILE-rwxrwxr--
 ```
 ```{bash}
 ls -l silly
+
 ```
 
